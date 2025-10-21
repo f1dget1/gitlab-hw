@@ -8,8 +8,7 @@ test1:
   tags:
     - netology-1
   script:
-    - cd gitlub-hw
-    - go test .
+    - go test ./...
 
 build1:
   stage: build1
