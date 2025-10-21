@@ -16,7 +16,7 @@ build1:
   tags:
     - netology-1
   services:
-    - docker:dind
+    - name: docker:dind
     - alias: docker
   variables:
     DOCKER_HOST: unix:///var/run/docker.sock
