@@ -13,6 +13,7 @@ test1:
 build1:
   stage: build1
   image: docker:latest
-  script: - docker build .
+  script:
+    - docker build .
   tags:
     - netology-1
