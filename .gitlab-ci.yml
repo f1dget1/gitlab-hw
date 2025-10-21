@@ -16,10 +16,11 @@ build1:
   tags:
     - netology-1
   services:
-    - docker:dind
+    - name: docker:dind
+      alias: docker
   variables:
     DOCKER_HOST: tcp://docker:2375
     DOCKER_TLS_CERTDIR: ""
   script:
-    - docker info   # проверяем подключение
+    - docker info
     - docker build -t my-app .
