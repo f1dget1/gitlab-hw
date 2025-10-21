@@ -1,3 +1,0 @@
-module gitlub-hw
-
-go 1.22
