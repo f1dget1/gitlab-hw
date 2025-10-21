@@ -13,14 +13,6 @@ test1:
 build1:
   stage: build1
   image: docker:latest
+  script: - docker build .
   tags:
     - netology-1
-  services:
-    - name: docker:dind
-      alias: docker
-  variables:
-    DOCKER_HOST: tcp://docker:2375
-    DOCKER_TLS_CERTDIR: ""
-  script:
-    - docker info
-    - docker build -t my-app .
