@@ -15,5 +15,10 @@ build1:
   image: docker:latest
   tags:
     - netology-1
+  services:
+    - docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
   script:
     - docker build -t my-app .
