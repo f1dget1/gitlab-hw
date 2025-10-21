@@ -8,6 +8,7 @@ test1:
   tags:
     - netology-1
   script:
+    - cd gitlab-hw
     - go test .
 
 build1:
